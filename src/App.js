@@ -154,7 +154,7 @@ function App() {
 
   // Edit Districts
   const editDistrict = (param) =>{
-    setDistricts(districts.map((district)=>district.id === param.id ? {...district, ...param}:district))
+    setDistricts(districts.map((district)=>district.id === param.id ? {...district, ...param} : district))
   }
   // ***** End Districts *****
 

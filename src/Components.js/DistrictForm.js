@@ -21,11 +21,14 @@ export const DistrictForm = ({onSave, provinces, selected, onEdit}) => {
 
     const onUpdateDistrict = () => {
         onEdit(form)
+        setForm({namelatin:"", namekh:"", province_id:""})
     }
 
     useEffect(()=>{
         setForm(selected)
     },[selected])
+
+    
 
     return(
         <div className="w-full max-w-lg" >

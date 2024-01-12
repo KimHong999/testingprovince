@@ -30,7 +30,7 @@ export const TextSelect = ({label, placeholder, name, value, onChange, options=[
     return(
         <div className="md:w-1/3">
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{label}</label>
-            <select name={name} value={value} onChange={onChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <select name={name} value={value} onChange={onChange} onSelect={onChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <option value="" >{placeholder}</option>
             {
                 options.map(item => <option key={item.id} value={item.id} >{item.namelatin}</option>)
